@@ -1,0 +1,43 @@
+body{
+  padding-top: 10%;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+p{
+  color: white;
+}
+
+.pink{
+  color : #e2006a;
+}
+
+#style-img{
+  width: 40%;
+  height: 40%;
+}
+
+#compt{
+  transform: translateY(40px);
+  font-size: 120px;
+}
+
+.imp_txt{
+  font-size: 50px;
+}
+
+.text{
+  font-size: 20px;
+}
