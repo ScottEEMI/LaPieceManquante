@@ -27,7 +27,6 @@
     </div>
 
     <?php
-    while (!$a) {
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -42,8 +41,6 @@
 
         curl_close($curl);
         set_time_limit(30);
-        $a+=1;
-        }
     ?>
 
     <script type="text/javascript">
