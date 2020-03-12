@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LAPIÈCEMANQUANTE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+  <div class="main-container">
+    <div class="container">
+      <img id="style-img-singer" src="img/logo.svg" alt="">
+    </div>
+    <div class="container text">
+      <p>20 TWEET</p>&nbsp<p class="pink">#PIECEMANQUANTE</p>&nbsp<p>= 1</p>&nbsp<p class="pink">VETEMENT OFFERT</p>&nbsp<p>POUR <img id="style-img" src="img/logo.png" style="vertical-align: text-top;"></p>
+    </div>
+    <div id="machine"><img class="machine-inner" id="myImg" src="machin/contours_Calque-0.png"></div>
+    <div class="container imp">
+      <div id="compt" class="pink">
+          <!-- compteur -->32
+      </div>
+      <div class="imp_txt">
+        vêtements<br>collectées
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+    var x = 33;
+    var i = 31;
+    setInterval(function(){
+      if (i >= 0) {
+          document.getElementById("myImg").src = "machin/contours_Calque-"+ i +".png";
+          i--;
+      }
+      if (i < 0) {
+          i = 31;
+          document.getElementById("myImg").src = "machin/contours_Calque-0.png";
+          document.getElementById("compt").innerHTML = x;
+          x ++;
+      }
+  }, 200);
+    </script>
+  </body>
+</html>
+
+
+<!-- jeu concour -->
+<!--
+<img src="https://raw.githubusercontent.com/pepkerESD/airbnb/master/content/contours-txt.png" style="
+    position: absolute;
+    width: 210px;
+    left: 40px;
+    top: 15px;
+">
+<img src="https://raw.githubusercontent.com/pepkerESD/airbnb/master/content/contours.png" style="
+    position position: absolute;
+    position: absolute;
+    width: 225px;
+    right: 35px;
+    top: 500px;
+">
+<div style="position : absolute;top:50%;left: -35px;background-color: #e30044;color: #fff;transform: rotate(90deg);padding: 10px;font-weight: 800;">JEU CONCOURS</div>
+<div style="width:100%;height:100%;position:absolute;background-color: #00000080;z-index: 9;top: 0;" class=""></div>
+<div style="position: absolute;z-index: 10;left: 20%;top: 20%;" class="row">
+    <div class="col-md-12">
+        <div class="product-wrapper product-gamme">
+            <img class="image-product-large" src="http://www.singerfrance.com/wp-content/uploads/2017/07/Supera-5523-1.png">
+            <div class="product-left">
+                <h1 class="title">Jeu Concours</h1>
+                <div class="description">
+                    <p>Bravo ! tu as trouvé toutes les machines SINGER !<br>
+Finalise ta participation au jeu concours SINGER et tente de gagner un de nos modèle</p>
+
+<p><a href="https://www.singerfrance.com/wp-content/uploads/2017/07/Fiche-produit-Supera.pdf">Consulter la fiche produit</a></p>
+                </div>
+                <p class="price">Renseigne ton email<input type="email" placeholder="example@mail.com">
+                </p>
+                                                    <a class="btn-video btn-red" target="_blank" href="https://www.singerfrance.com/nos-magasins/">Je participe au concours</a>
+                            </div>
+        </div>
+    </div>
+</div> -->

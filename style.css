@@ -1,7 +1,12 @@
 body{
-  padding-top: 10%;
-  background-color: black;
-  font-family: sans-serif;
+  padding-top: 5%;
+  font-family: drclFont;
+  background-color: #ffffff;
+  /* background-image: url(img/bck.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .main-container{
@@ -17,27 +22,41 @@ body{
 }
 
 p{
-  color: white;
+  color: #010101;
 }
 
 .pink{
-  color : #e2006a;
+  color : #396398;
 }
 
 #style-img{
   width: 40%;
   height: 40%;
 }
+#style-img-singer{
+  width: 30%;
+  height: 30%;
+}
 
 #compt{
   transform: translateY(40px);
   font-size: 120px;
 }
-
+#machine{
+    padding: 0 40%;
+}
+.machine-inner{
+    width : 200px;
+}
 .imp_txt{
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .text{
-  font-size: 20px;
+  font-size: 42px;
+}
+
+@font-face {
+  font-family: drclFont;
+  src: url(font/NimbusSansDOT-UltrLigh.otf);
 }
